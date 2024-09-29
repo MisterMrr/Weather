@@ -1,0 +1,123 @@
+.weather__details {
+    display: flex;
+    flex-direction: column;
+
+    width: 30%;
+    height: 100%;
+
+    font-size: 20px;
+    color: grey;
+
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+.location__wrapper {
+    position: relative;
+    width: 90%;
+    margin: 20px auto;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.location__wrapper::after {
+    content: " ";
+    position: absolute;
+    bottom: -8px;
+    display: block;
+
+    width: 100%;
+    height: 1px;
+    background-color: gray;
+}
+
+.search {
+    width: 90%;
+    height: 30px;
+    font-size: 20px;
+
+    margin: 15px 0;
+
+    color: white;
+
+    background: none;
+    border: none;
+}
+
+.search:focus {
+    outline: none; /* Убираем обводку при фокусе */
+    border: none; /* Цвет границы при фокусе */
+}
+
+.search:active {
+    border: none;
+}
+
+.myGeo {
+    background: none;
+    border: none;
+}
+
+.pin {
+    display: block;
+    width: 25px;
+    height: 25px;
+
+    fill: rgba(158, 158, 158, 0.733);
+}
+
+.location__list {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    width: 90%;
+    margin: 25px auto;
+
+    font-weight: 400;
+}
+
+.location__list::after {
+    content: " ";
+    position: absolute;
+    bottom: -25px;
+    display: block;
+
+    width: 100%;
+    height: 1px;
+    background-color: gray;
+}
+
+.weather__details__container {
+    position: relative;
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.weather__details__container::after {
+    content: " ";
+    position: absolute;
+    bottom: -25px;
+    display: block;
+
+    width: 100%;
+    height: 1px;
+    background-color: gray;
+}
+
+.weather__details__title {
+    font-weight: 700;
+    color: white;
+
+    margin: 30px 0;
+}
+
+.weather__details__container span {
+    display: flex;
+    justify-content: space-between;
+}
